@@ -11,7 +11,7 @@ pub mod crowdfunding {
         let campaign = &mut ctx.accounts.campaign;
         campaign.name = name;
         campaign.description = description;
-        campaign.amount_donated = 0;
+        campaign.amount_donated = 0;    // amount ever donated (exc. withdrawals)
         campaign.admin = *ctx.accounts.user.key;
         Ok(())
     }
