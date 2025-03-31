@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
-import {
-  Connection,
-  publicKey,
-  clusterApiUrl,
-  PublicKey,
-} from "@solana/web3.js";
+import { Connection, clusterApiUrl, PublicKey } from "@solana/web3.js";
 import { Program, AnchorProvider, web3, utils, BN } from "@coral-xyz/anchor";
-import * as anchor from "@coral-xyz/anchor";
 
 import "./App.css";
 import idl from "./idl.json";
